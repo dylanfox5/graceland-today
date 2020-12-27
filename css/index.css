@@ -1,0 +1,844 @@
+html {
+  background: linear-gradient(rgba(55, 131, 184, 0.70), rgba(55, 131, 184, 0.70)), url("../img/GU1.jpg");
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  overflow: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.white {
+  color: white;
+}
+
+.yellow {
+  color: rgba(245, 196, 0);
+}
+
+.bg-white {
+  background-color: rgba(255, 255, 255);
+}
+
+.today-card {
+  height: 78.5vh;
+  width: 14.5vw;
+  background-color: rgba(255, 255, 255);
+  color: black;
+  border-radius: 0px;
+}
+
+.today-title-card {
+  height: 20.25vh;
+  background-color: rgba(0, 31, 91);
+}
+
+.today-title-datenum {
+  font-size: 12vh;
+}
+
+.today-title-daymonth {
+  font-size: 2.25vh;
+}
+
+.today-ann-card {
+  height: 36vh;
+  background-color: white;
+  border: 0px;
+}
+
+.today-ann {
+  height: 5vh;
+  background-color: white;
+  font-size: 2.1vh;
+  border: 0px;
+}
+
+ul {
+  font-weight: bold;
+}
+
+ul li p {
+  font-size: 1.4vh;
+}
+
+.today-logo-card {
+  border: 0px;
+}
+
+.today-ext-card {
+  width: 14.5vw;
+  height: 17vh;
+  background-color: rgba(0, 31, 91);
+  font-size: 75%;
+}
+
+.today-ext-logo {
+  width: 4.5vw;
+}
+
+.logo-text {
+  font-size: 1.75vh;
+}
+
+.week-cards {
+  width: 9vw;
+  height: 15.75vh;
+  background-color: rgba(200, 219, 234);
+  border-width: 3px !important;
+  border-color: rgba(0, 31, 91);
+  border-radius: 0px;
+}
+
+.week-cards-title {
+  width: 1.6vw;
+  color: white;
+  padding-top: .1vw;
+  background-color: rgba(0, 31, 91);
+}
+
+.week-cards-ann {
+  width: 6.6vw;
+  height: 2.25vh;
+  font-size: 1.4vh;
+  border-radius: 0px;
+  font-weight: bold;
+  margin-top: 0rem;
+  margin-bottom: .5rem;
+}
+
+.event-style {
+  background-color: solid white;
+  color: black;
+  border: 0px;
+}
+
+.aca-style {
+  background-color: rgba(0, 31, 91);
+  color: white;
+  border: 0px;
+}
+
+.off-style {
+  background-color: rgba(245, 196, 0);
+  color: rgba(0, 31, 91);
+  border: 0px;
+}
+
+.calendar-card {
+  width: 55.5vw;
+  height: 63vh;
+  background: linear-gradient(rgba(0, 31, 91), rgb(114, 133, 167));
+  border: 0px;
+  border-radius: 0px;
+}
+
+.calendar-title {
+  font-size: 5vh;
+  color: white;
+}
+
+.calendar-day-card {
+  width: 6.75vw;
+  height: 9vh;
+  background-color: rgba(225, 225, 225);
+  border-radius: 0px;
+}
+
+.calendar-day-card-num {
+  font-size: 1.68vh;
+}
+
+.month-cards-ann {
+  width: 5vw;
+  height: 1.68vh;
+  font-size: 1.26vh;
+  border-radius: 0px;
+  font-weight: bold;
+  margin-bottom: .25rem;
+}
+
+.ann-card {
+  width: 18vw;
+  background-color: rgba(255, 255, 255);
+  border-radius: 0px;
+}
+
+.ann-title-card {
+  color: rgba(32, 57, 108);
+}
+
+.ann {
+  font-size: 1.68vh;
+}
+
+.asc {
+  border: 0px;
+  border-left: 2.8vh solid rgba(166, 171, 171);
+}
+
+.chc {
+  border: 0px;
+  border-left: 2.8vh solid rgba(133, 172, 204);
+}
+
+.cosa {
+  border: 0px;
+  border-left: 2.8vh solid rgba(238, 194, 66);
+}
+
+.idea {
+  border: 0px;
+  border-left: 2.8vh solid rgba(239, 39, 50);
+}
+
+.ims {
+  border: 0px;
+  border-left: 2.8vh solid rgba(227, 159, 101);
+}
+
+.sen {
+  border: 0px;
+  border-left: 2.8vh solid rgba(165, 184, 117);
+}
+
+.cust-shadow {
+  box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.scroll {
+  max-height: 75px;
+  overflow-y: auto;
+}
+
+.scrollbar-today {
+  height: 38.25vh;
+  width: 12.7vw;
+  overflow-y: scroll;
+}
+
+.scrollbar-week {
+  height: 9vh;
+  width: 8.3vw;
+  overflow-y: scroll;
+}
+
+.scrollbar-month {
+  height: 5vh;
+  width: 5.55vw;
+  overflow-y: scroll;
+}
+
+.scrollbar-primary::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 50px;
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); */
+}
+  
+.scrollbar-primary::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: rgba(0, 31, 91); 
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+  
+.scrollbar-primary {
+  scrollbar-color: rgba(0, 31, 91);
+}
+
+.mobile {
+  display: none;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  html {
+    background: linear-gradient(rgba(55, 131, 184, 0.70), rgba(55, 131, 184, 0.70)), url("../img/GU1.jpg");
+    height: auto;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-bottom: 5vh;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  .today-card {
+    height: 78.5vh;
+    width: 14.5vw;
+    background-color: rgba(255, 255, 255);
+    color: black;
+    border-radius: 0px;
+  }
+
+  .today-title-card {
+    height: 18vh;
+    background-color: rgba(0, 31, 91);
+  }
+  
+  .today-title-datenum {
+    font-size: 9vh;
+  }
+  
+  .today-title-daymonth {
+    font-size: 2vh;
+  }
+  
+  .today-ann-card {
+    height: 38vh;
+    background-color: white;
+    border: 0px;
+  }
+  
+  .today-ann {
+    height: 5vh;
+    background-color: white;
+    font-size: 2.1vh;
+    border: 0px;
+  }
+
+  .logo-text {
+    font-size: 1.5vh;
+  }
+
+  .week-cards {
+    width: 8vw;
+    height: 12.75vh;
+    background-color: rgba(200, 219, 234);
+    border-width: 3px !important;
+    border-color: rgba(0, 31, 91);
+    border-radius: 0px;
+  }
+  
+  .week-cards-title {
+    width: 2vw;
+    color: white;
+    padding-top: .1vw;
+    background-color: rgba(0, 31, 91);
+  }
+  
+  .week-cards-ann {
+    width: 3vw;
+    height: 2vh;
+    font-size: 1vh;
+    border-radius: 0px;
+    font-weight: bold;
+    margin-top: 0rem;
+    margin-bottom: .5rem;
+  }
+
+  .calendar-card {
+    width: 50vw;
+    height: 55vh;
+    background: linear-gradient(rgba(0, 31, 91), rgb(114, 133, 167));
+    border: 0px;
+    border-radius: 0px;
+  }
+  
+  .calendar-title {
+    font-size: 3.5vh;
+    color: white;
+  }
+  
+  .calendar-day-card {
+    width: 4.75vw;
+    height: 8vh;
+    background-color: transparent;
+    border-radius: 0px;
+    border: 0px;
+  }
+
+  .calendar-day-name {
+    font-size: 1.5vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .calendar-day-card-num {
+    font-size: 2vh;
+    color: white;
+    position: relative;
+    left: -1rem;
+    top: .5rem;
+  }
+  
+  .month-cards-ann {
+    width: 2vw;
+    height: 1.68vh;
+    font-size: 1vh;
+    border-radius: 0px;
+    font-weight: bold;
+    margin-bottom: .25rem;
+    display: none;
+  }
+
+  .ann-card {
+    width: 15vw;
+    background-color: rgba(255, 255, 255);
+    border-radius: 0px;
+    margin-left: -3.5rem;
+  }
+
+  .ann-title-card {
+    font-size: 2vh;
+    color: rgba(32, 57, 108);
+    position: relative;
+  }
+
+  .scroll {
+    max-height: 75px;
+    overflow-y: auto;
+  }
+
+  .scrollbar-today {
+    height: 38.25vh;
+    width: 12.7vw;
+    overflow-y: scroll;
+  }
+  
+  .scrollbar-week {
+    height: 7vh;
+    width: 7vw;
+    overflow-y: scroll;
+  }
+  
+  .scrollbar-month {
+    height: 5vh;
+    width: 3.25vw;
+    overflow-y: scroll;
+  }
+
+}
+
+@media (min-width: 890px) and (max-width: 991px) {
+  html {
+    background: linear-gradient(rgba(55, 131, 184, 0.70), rgba(55, 131, 184, 0.70)), url("../img/GU1.jpg");
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  .hide-tablet {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .today-card {
+    height: 78.5vh;
+    width: 14.5vw;
+    background-color: rgba(255, 255, 255);
+    color: black;
+    border-radius: 0px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .today-title-card {
+    height: 18vh;
+    background-color: rgba(0, 31, 91);
+  }
+  
+  .today-title-datenum {
+    font-size: 6.5vh;
+  }
+  
+  .today-title-daymonth {
+    font-size: 1.75vh;
+  }
+  
+  .today-ann-card {
+    height: 50vh;
+    background-color: white;
+    border: 0px;
+  }
+
+  ul {
+    font-weight: bold;
+    position: relative;
+    left: -4rem;
+    font-size: 1.75vh;
+  }
+
+  ul li p {
+    font-size: 1.25vh;
+  }
+  
+  .today-ann {
+    height: 5vh;
+    background-color: white;
+    font-size: 2.1vh;
+    border: 0px;
+    position: relative;
+  }
+
+  .today-logo-card {
+    border: 0px;
+  }
+
+  .week-cards {
+    width: 9vw;
+    height: 12.75vh;
+    background-color: rgba(200, 219, 234);
+    border-width: 3px !important;
+    border-color: rgba(0, 31, 91);
+    border-radius: 0px;
+    margin: .5vw;
+    position: relative;
+    bottom: -1rem;
+  }
+
+  .week-cards-day {
+    position: relative;
+    bottom: -2rem;
+  }
+  
+  .week-cards-title {
+    width: 2vw;
+    color: white;
+    padding-top: .1vw;
+    background-color: rgba(0, 31, 91);
+    position: relative;
+    right: -1rem;
+    top: -1rem;
+  }
+  
+  .week-cards-ann {
+    width: 5vw;
+    height: 1.75vh;
+    font-size: 1vh;
+    border-radius: 0px;
+    font-weight: bold;
+    margin-top: 0rem;
+    margin-bottom: .5rem;
+  }
+
+  .calendar-card {
+    width: 49vw;
+    height: 55vh;
+    background: linear-gradient(rgba(0, 31, 91), rgb(114, 133, 167));
+    border: 0px;
+    border-radius: 0px;
+    margin-top: 7vh;
+  }
+  
+  .calendar-title {
+    font-size: 3vh;
+    color: white;
+  }
+  
+  .calendar-day-card {
+    width: 3vw;
+    height: 8vh;
+    background-color: transparent;
+    border-radius: 0px;
+    border: 0px;
+  }
+
+  .calendar-day-name {
+    font-size: 2vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .calendar-day-card-num {
+    font-size: 2vh;
+    color: white;
+    position: relative;
+    top: .5rem;
+  }
+
+  .today-ext-card {
+    width: 14.5vw;
+    height: 17vh;
+    background-color: rgba(0, 31, 91);
+    font-size: 75%;
+    display: none;
+  }
+
+  .month-cards-ann {
+    width: 2vw;
+    height: 1.68vh;
+    font-size: 1vh;
+    border-radius: 0px;
+    font-weight: bold;
+    margin-bottom: .25rem;
+    display: none;
+  }
+
+  .ann-card {
+    width: 15vw;
+    background-color: rgba(255, 255, 255);
+    border-radius: 0px;
+    margin-bottom: 1.5vw;
+    position: relative;
+    bottom: -3rem;
+  }
+
+  .ann-title-card {
+    font-size: 2vh;
+    color: rgba(32, 57, 108);
+    position: relative;
+  }
+
+  .scroll {
+    max-height: 75px;
+    overflow-y: auto;
+  }
+
+  .scrollbar-today {
+    height: 38.25vh;
+    width: 12.7vw;
+    overflow-y: scroll;
+  }
+  
+  .scrollbar-week {
+    height: 7vh;
+    width: 9vw;
+    overflow-y: scroll;
+    position: relative;
+    left: -1.85rem;
+    top: -1.5rem;
+  }
+  
+  .scrollbar-month {
+    height: 5vh;
+    width: 3.25vw;
+    overflow-y: scroll;
+  }
+
+  .scrollbar-primary::-webkit-scrollbar {
+    width: 5px;
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); */
+    border-radius: 50px; 
+  }
+    
+  .scrollbar-primary::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: rgba(0, 31, 91); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+
+}
+
+
+@media (max-width: 889px) {
+  
+  html {
+    background: linear-gradient(rgba(55, 131, 184, 0.70), rgba(55, 131, 184, 0.70)), url("../img/GU1.jpg");
+    height: auto;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-bottom: 5vh;
+  }
+  
+  body {
+    overflow: auto;
+  }
+
+  .narrow {
+    width: 50%;
+    margin: auto;
+  }
+
+  .mx-auto-n {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .today-card {
+    height: 75vh;
+    width: 65vw;
+    background-color: rgba(255, 255, 255);
+    color: black;
+    border-radius: 0px;
+    margin-bottom: 4vh;
+  }
+
+  .today-title-card {
+    height: 23vh;
+    width: 45vw;
+    background-color: rgba(0, 31, 91);
+    margin: auto;
+    margin-top: 3vh;
+  }
+
+  .today-title-datenum {
+    font-size: 12vh;
+    margin-top: -1vh;
+  }
+  
+  .today-title-daymonth {
+    font-size: 2.25vh;
+    margin-top: -3vh;
+  }
+  
+  .today-ann-card {
+    height: 35vh;
+    background-color: white;
+    border: 0px;
+  }
+
+  .today-ann {
+    height: 30vh;
+    background-color: white;
+    font-size: 2.1vh;
+    margin: auto;
+  }
+
+  ul li {
+    position: relative;
+    right: -.75rem;
+  }
+
+  ul li span {
+    position: relative;
+    left: -1.25rem;
+  }
+
+  .week-cards {
+    width: 75vw;
+    height: 8vh;
+    background-color: rgba(200, 219, 234);
+    border-width: 3px !important;
+    border-color: rgba(0, 31, 91);
+    border-radius: 0px;
+    border-left: 2rem solid rgba(0, 31, 91) !important;
+    margin-bottom: 1.5vh;
+  }
+
+  .week-cards-title {
+    width: 1.5rem;
+    color: white;
+    padding-top: .3vw;
+    background-color: rgba(0, 31, 91);
+    margin-right: -1rem;
+    margin-top: -1rem;
+  }
+
+  .weeks-card-title-day {
+    font-size: 1rem;
+    margin-left: -3.25rem;
+    margin-top: -.5rem;
+    transform: rotate(-90deg);
+  }
+  
+  .week-cards-ann {
+    width: 45vw;
+    height: 2.25vh;
+    font-size: 1.4vh;
+    border-radius: 0px;
+    font-weight: bold;
+  }
+
+  .week-cards-ann-text {
+    position: relative;
+    top: -1.25rem;
+  }
+
+  .calendar-card {
+    width: 85vw;
+    height: 40vh;
+    background: linear-gradient(rgba(0, 31, 91), rgb(114, 133, 167));
+    border: 0px;
+    border-radius: 0px;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+  }
+
+  .calendar-title {
+    font-size: 3vh;
+    color: white;
+  }
+
+  .calendar-day-card {
+    width: 10vw;
+    height: 5.5vh;
+    background-color: transparent;
+    border-radius: 0px;
+    border: 0px;
+  }
+
+  .calendar-day-name {
+    font-size: .5vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+
+  .calendar-day-card-num {
+    color: white;
+    font-size: 2vh;
+    margin-right: -.3rem;
+    margin-top: -1rem;
+  }
+
+  .calendar-day-col {
+    width: 9.5vw;
+    height: 5.5vh;
+    margin: .25vh;
+
+  }
+  
+  .ann-card {
+    width: 75vw;
+    background-color: rgba(255, 255, 255);
+    border-radius: 0px;
+    margin: auto;
+    margin-bottom: 2vh;
+  }
+
+  .scrollbar-today {
+    height: 30vh;
+    width: 53.5vw;
+    overflow-y: scroll;
+    border: 5px;
+    margin: auto;
+    margin-top: -1.5rem;
+    margin-left: -2.85rem;
+    overflow-x: hidden;
+  }
+
+  .scrollbar-week {
+    height: 6vh;
+    width: 50vw;
+    margin-left: 5rem;
+    margin-top: -1rem;
+    overflow-y: scroll;
+  }
+
+}

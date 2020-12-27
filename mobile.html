@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="css/mobile.css" rel="stylesheet">
+
+    <title>Graceland Today</title>
+</head>
+
+<body class="transparent">
+    <div class="container-fluid">
+
+        <div class="col-sm-12" align="center">
+
+            <div class="row">
+
+                <div class="card mt-lg-n5 today-card cust-shadow">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="card mt-lg-3 mx-lg-n2 border-0">
+                                    <div class="card-body today-title-card border">
+                                        <h1 id="datenum" class="card-title white today-title-datenum mt-lg-n2"></h1>
+                                        <h6 id="daymonth" class="card-title yellow today-title-daymonth mt-lg-n4"></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="card mt-lg-5 mx-lg-n2 border-0">
+                                    <div class="card-body today-ann-card">
+
+                                        <div class="card mt-lg-n5 mx-lg-n4 today-ann">
+                                            <div class="card-body">
+                                                <ul id="today-scroll" class="mt-lg-n3 mx-lg-n4 scrollbar-today scrollbar-primary"></ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-lg-2">
+                            <div class="col-sm">
+                                <div class="card today-logo-card">
+                                    <img class="card-img-top img-fluid" src="img/graceland-mobile.png" style="max-width: 250px; margin: auto;">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row" style="margin-top: 6vh;">
+
+                <div class="col-sm-12">
+
+                    <div class="row">
+                        <div class="card week-cards cust-shadow">
+                            <div class="card-body">
+                                <h6 id="sun" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-2 float-right week-cards-title hide"></h6>
+                                <p class="white mobile weeks-card-title-day float-left" style="margin-top:-.37rem;">SUN</p>
+
+                                <div id="sunday" class="scrollbar-week scrollbar-primary ml-lg-n4 mx-auto-n"></div>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card my-lg-n3 week-cards cust-shadow">
+                            <div class="card-body">
+                              <h6 id="mon" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-2 float-right week-cards-title hide"></h6>
+                              <p class="white mobile weeks-card-title-day float-left" style="margin-left: -3.35rem; margin-top:-.37rem">MON</p>
+
+                              <div id="monday" class="scrollbar-week scrollbar-primary ml-lg-n4 mx-auto-n"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card my-lg-n3 week-cards cust-shadow">
+                            <div class="card-body">
+                                <h6 id="tues" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-2 float-right week-cards-title hide"></h6>
+                                <p class="white mobile weeks-card-title-day float-left" style="margin-left:-3.5rem; margin-top:-.4rem">TUES</p>
+
+                                <div id="tuesday" class="scrollbar-week scrollbar-primary ml-lg-n4 mx-auto-n"></div>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card my-lg-n3 week-cards cust-shadow">
+                            <div class="card-body">
+                                <h6 id="wednes" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-2 float-right week-cards-title hide"></h6>
+                                <p class="white mobile weeks-card-title-day float-left" style="margin-left: -3.37rem; margin-top:-.37rem">WED</p>
+
+                                <div id="wednesday" class="scrollbar-week scrollbar-primary ml-lg-n4 mx-auto-n">
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card my-lg-n3 week-cards cust-shadow">
+                            <div class="card-body">
+                                <h6 id="thurs" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-2 float-right week-cards-title hide"></h6>
+                                <p class="white mobile weeks-card-title-day float-left" style="margin-left:-3.5rem; margin-top:-.37rem">THUR</p>
+
+                                <div id="thursday" class="scrollbar-week scrollbar-primary ml-lg-n4 mx-auto-n"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card my-lg-n3 week-cards cust-shadow">
+                            <div class="card-body">
+                                <h6 id="fri" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-2 float-right week-cards-title hide"></h6>  
+                                <p class="white mobile weeks-card-title-day float-left" style="margin-left:-3rem; margin-top:-.37rem">FRI</p>
+
+                                <div id="friday" class="scrollbar-week scrollbar-primary ml-lg-n4 mx-auto-n"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card my-lg-n3 week-cards cust-shadow specific">
+                            <div class="card-body">
+                                <h6 id="satur" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-2 float-right week-cards-title hide"></h6> 
+                                <p class="white mobile weeks-card-title-day float-left" style="margin-left:-3.12rem; margin-top:-.37rem">SAT</p>
+
+                                <div id="saturday" class="scrollbar-week scrollbar-primary ml-lg-n4 mx-auto-n"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="row" style="margin-top: 6vh;">
+                <div class="col-sm-12">
+
+                    <div class="card calendar-card cust-shadow mx-auto-n">
+                        <div class="card-body">
+                            <h1 id="monthyear" class="card-title calendar-title"></h1>
+
+                            <div class="col-sm-12">
+
+                                <div class="row">
+
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <p class="white calendar-day-name">SU</p>
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="1" class="card-title calendar-day-card-num"></h6>
+
+                                                <!-- <div id="1-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div> -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <p class="white calendar-day-name">M</p>
+                                        <div class="card calendar-day-card mt-lg-1">
+                                            <div class="card-body">
+                                                <h6 id="2" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="2-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <p class="white calendar-day-name">T</p>
+                                        <div class="card calendar-day-card mt-lg-1">
+                                            <div class="card-body">
+                                                <h6 id="3" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>
+
+                                                <div id="3-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <p class="white calendar-day-name">W</p>
+                                        <div class="card calendar-day-card mt-lg-1">
+                                            <div class="card-body">
+                                                <h6 id="4" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>
+
+                                                <div id="4-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <p class="white calendar-day-name">TH</p>
+                                        <div class="card calendar-day-card mt-lg-1">
+                                            <div class="card-body">
+                                                <h6 id="5" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>
+
+                                                <div id="5-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <p class="white calendar-day-name">F</p>
+                                        <div class="card calendar-day-card mt-lg-1">
+                                            <div class="card-body">
+                                                <h6 id="6" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6> 
+                                                
+                                                <div id="6-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <p class="white calendar-day-name">SA</p>
+                                        <div class="card calendar-day-card mt-lg-1">
+                                            <div class="card-body">
+                                                <h6 id="7" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="7-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 7vh;">
+
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="8" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>
+
+                                                <div id="8-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="9" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="9-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="10" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="10-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="11" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="11-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="12" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="12-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="13" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="13-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="14" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="14-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 1vh;">
+
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="15" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="15-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="16" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="16-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="17" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="17-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="18" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="18-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="19" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="19-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="20" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="20-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="21" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="21-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 1vh;">
+
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="22" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="22-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="23" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="23-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="24" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6> 
+                                                
+                                                <div id="24-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="25" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6> 
+                                                
+                                                <div id="25-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="26" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="26-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="27" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="27-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="28" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="28-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 1vh;">
+
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="29" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="29-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="30" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6> 
+                                                
+                                                <div id="30-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="31" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6> 
+                                                
+                                                <div id="31-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="32" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6> 
+                                                
+                                                <div id="32-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="33" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="33-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="34" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="34-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm calendar-day-col" align="center">
+                                        <div class="card calendar-day-card">
+                                            <div class="card-body">
+                                                <h6 id="35" class="card-title mr-lg-n3 mt-lg-n3 mb-lg-n1 float-right calendar-day-card-num"></h6>  
+
+                                                <div id="35-scroll" class="scrollbar-month scrollbar-primary ml-lg-n3"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 6vh;">
+
+                <div id="accordion" class="col-sm-12">
+
+                    <div class="card asc ann-card cust-shadow" align="center">
+                        <div class="card-header" id="headingOne">
+                            <h6 class="mb-n2">
+                                <button class="btn btn-link ann-title-card" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">ASC</button>
+                            </h6>
+                        </div>
+                        <div id="collapseOne" class="collapse scroll" aria-labelledby="headingOne" data-parent="#accordion">
+                            <ul id="ascann" class="ml-lg-n2" align="left"></ul>
+                        </div>
+                    </div>
+
+                    <div class="card chc ann-card cust-shadow my-lg-3" align="center">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-n2">
+                                <button class="btn btn-link collapsed ann-title-card mt-lg-n1" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">CHC</button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse scroll" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <ul id="chcann" class="ml-lg-n2" align="left"></ul>
+                        </div>
+                    </div>
+
+                    <div class="card cosa ann-card cust-shadow my-lg-3" align="center">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-n2">
+                                <button class="btn btn-link collapsed ann-title-card mt-lg-n1" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">COSA</button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse scroll" aria-labelledby="headingThree" data-parent="#accordion">
+                            <ul id="cosaann" class="ml-lg-n2" align="left"></ul>
+                        </div>
+                    </div>
+
+                    <div class="card idea ann-card cust-shadow my-lg-3" align="center">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-n2">
+                                <button class="btn btn-link collapsed ann-title-card mt-lg-n1" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">IDEA</button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse scroll" aria-labelledby="headingFour" data-parent="#accordion">
+                            <ul id="ideaann" class="ml-lg-n2" align="left"></ul>
+                        </div>
+                    </div>
+
+                    <div class="card ims ann-card cust-shadow my-lg-3" align="center">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-n2">
+                                <button class="btn btn-link collapsed ann-title-card mt-lg-n1" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">IMs</button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse scroll" aria-labelledby="headingFive" data-parent="#accordion">
+                            <ul id="imsann" class="ml-lg-n2" align="left"></ul>
+                        </div>
+                    </div>
+
+                    <div class="card sen ann-card cust-shadow my-lg-3" align="center">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-n2">
+                                <button class="btn btn-link collapsed ann-title-card mt-lg-n1" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Senate</button>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse scroll" aria-labelledby="headingSix" data-parent="#accordion">
+                            <ul id="senann" class="ml-lg-n2" align="left"></ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+       
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
