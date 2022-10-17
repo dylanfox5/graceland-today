@@ -22,36 +22,6 @@ body {
   justify-content: center;
 }
 
-.today-card {
-  max-height: 90vh;
-  width: 18vw;
-  background-color: rgba(225, 225, 225);
-  color: black;
-  border-radius: 0px !important;
-  border: none !important;
-  box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.today-card .card-header {
-  background-color: rgba(0, 31, 91) !important;
-  color: white;
-  text-align: center;
-  border-radius: 0px !important;
-}
-
-.today-card .card-header .date-num {
-  font-size: 500%;
-}
-
-.today-card .card-header .date-day-year {
-  color: rgba(245, 196, 0);
-}
-
-.today-card .graceland {
-  background: no-repeat;
-  padding: 2rem;
-}
-
 .center {
   display: flex;
   justify-content: center;
@@ -66,7 +36,7 @@ body {
 }
 
 .day-card {
-  width: 10vw !important;
+  width: 9vw !important;
   height: 15.75vh !important;
   background-color: rgba(200, 219, 234) !important;
   border-width: 3px !important;
@@ -83,4 +53,12 @@ body {
 
 .day-card .card-text {
   font-size: 75%;
+}
+
+.calendar-card {
+  width: 55.5vw;
+  min-height: 66.5vh;
+  background: linear-gradient(rgba(0, 31, 91), rgb(114, 133, 167));
+  border: 0px;
+  border-radius: 0px;
 }

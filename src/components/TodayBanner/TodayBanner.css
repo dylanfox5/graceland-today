@@ -1,0 +1,29 @@
+.today-card {
+    max-height: 90vh;
+    min-width: 18vw;
+    background-color: rgba(225, 225, 225);
+    color: black;
+    border-radius: 0px !important;
+    border: none !important;
+    box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .today-card .card-header {
+    background-color: rgba(0, 31, 91) !important;
+    color: white;
+    text-align: center;
+    border-radius: 0px !important;
+  }
+  
+  .today-card .card-header .date-num {
+    font-size: 500%;
+  }
+  
+  .today-card .card-header .date-day-year {
+    color: rgba(245, 196, 0);
+  }
+  
+  .today-card .graceland {
+    background: no-repeat;
+    padding: 2rem;
+  }
