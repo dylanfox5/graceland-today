@@ -11,7 +11,7 @@ function App() {
   return (
     <Container fluid className="App">
       <Row className="vh-100">
-        <Col sm={12} lg={3} className="border">
+        <Col sm={12} lg={3} className="border middle">
           <Card className="today-card">
             <Card.Header>
               <Card.Text as="h1" className="date-num">
@@ -32,7 +32,7 @@ function App() {
         </Col>
         <Col sm={12} lg={9} className="border">
           <Row className="border">
-            <Col sm={12} lg={2} className="mx-1">
+            <Col sm={12} lg={2} className="border">
               <Row className="center day">
                 <h5>Sunday</h5>
               </Row>
@@ -47,7 +47,7 @@ function App() {
                 </Card>
               </Row>
             </Col>
-            <Col sm={12} lg={2} className="mx-1">
+            <Col sm={12} lg={2} className="border">
               <Row className="center day">
                 <h5>Monday</h5>
               </Row>
@@ -62,7 +62,7 @@ function App() {
                 </Card>
               </Row>
             </Col>
-            <Col sm={12} lg={2} className="mx-1">
+            <Col sm={12} lg={2} className="">
               <Row className="center day">
                 <h5>Tuesday</h5>
               </Row>
@@ -77,7 +77,7 @@ function App() {
                 </Card>
               </Row>
             </Col>
-            <Col sm={12} lg={2} className="mx-1">
+            <Col sm={12} lg={2} className="">
               <Row className="center day">
                 <h5>Wednesday</h5>
               </Row>
@@ -92,7 +92,7 @@ function App() {
                 </Card>
               </Row>
             </Col>
-            <Col sm={12} lg={2} className="mx-1">
+            <Col sm={12} lg={2} className="">
               <Row className="center day">
                 <h5>Thursday</h5>
               </Row>
@@ -107,7 +107,7 @@ function App() {
                 </Card>
               </Row>
             </Col>
-            <Col sm={12} lg={2} className="mx-1">
+            <Col sm={12} lg={2} className="">
               <Row className="center day">
                 <h5>Friday</h5>
               </Row>
@@ -122,7 +122,7 @@ function App() {
                 </Card>
               </Row>
             </Col>
-            <Col sm={12} lg={2} className="mx-1">
+            <Col sm={12} lg={2} className="">
               <Row className="center day">
                 <h5>Saturday</h5>
               </Row>
