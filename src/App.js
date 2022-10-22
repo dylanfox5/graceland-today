@@ -5,10 +5,12 @@ import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
 
 import TodayBanner from './components/TodayBanner/TodayBanner';
+import Week from './components/Week/Week';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+
   return (
     <Container fluid className="App">
       <Row className="vh-100">
@@ -16,113 +18,7 @@ function App() {
           <TodayBanner />
         </Col>
         <Col sm={12} lg={10} className="">
-          <Row className="">
-            <Col className="">
-              <Row className="center day">
-                <h5>Sunday</h5>
-              </Row>
-              <Row className="center">
-                <Card className="day-card">
-                  <Card.Body>
-                    <Card.Text>
-                      This card has supporting text below as a natural lead-in to
-                      additional content.{' '}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Row>
-            </Col>
-            <Col className="">
-              <Row className="center day">
-                <h5>Monday</h5>
-              </Row>
-              <Row className="center">
-                <Card className="day-card">
-                  <Card.Body>
-                    <Card.Text>
-                      This card has supporting text below as a natural lead-in to
-                      additional content.{' '}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Row>
-            </Col>
-            <Col className="">
-              <Row className="center day">
-                <h5>Tuesday</h5>
-              </Row>
-              <Row className="center">
-                <Card className="day-card">
-                  <Card.Body>
-                    <Card.Text>
-                      This card has supporting text below as a natural lead-in to
-                      additional content.{' '}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Row>
-            </Col>
-            <Col className="">
-              <Row className="center day">
-                <h5>Wednesday</h5>
-              </Row>
-              <Row className="center">
-                <Card className="day-card">
-                  <Card.Body>
-                    <Card.Text>
-                      This card has supporting text below as a natural lead-in to
-                      additional content.{' '}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Row>
-            </Col>
-            <Col className="">
-              <Row className="center day">
-                <h5>Thursday</h5>
-              </Row>
-              <Row className="center">
-                <Card className="day-card">
-                  <Card.Body>
-                    <Card.Text>
-                      This card has supporting text below as a natural lead-in to
-                      additional content.{' '}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Row>
-            </Col>
-            <Col className="">
-              <Row className="center day">
-                <h5>Friday</h5>
-              </Row>
-              <Row className="center">
-                <Card className="day-card">
-                  <Card.Body>
-                    <Card.Text>
-                      This card has supporting text below as a natural lead-in to
-                      additional content.{' '}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Row>
-            </Col>
-            <Col className="">
-              <Row className="center day">
-                <h5>Saturday</h5>
-              </Row>
-              <Row className="center">
-                <Card className="day-card">
-                  <Card.Body>
-                    <Card.Text>
-                      This card has supporting text below as a natural lead-in to
-                      additional content.{' '}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Row>
-            </Col>
-          </Row>
+          <Week />
           <Row className="">
             <Col>
               <Card className="calendar-card">
@@ -130,7 +26,7 @@ function App() {
               </Card>
             </Col>
             <Col>
-              <Accordion defaultActiveKey="0">
+              <Accordion>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>ASC</Accordion.Header>
                   <Accordion.Body>
