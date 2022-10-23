@@ -1,6 +1,27 @@
 .calendar-day-card {
   max-width: 7vw;
-  min-height: 9vh;
+  min-height: 8vh;
+  max-height: 8vh;
   background-color: rgba(225, 225, 225);
   border-radius: 0px !important;
+}
+
+.calendar-day-card .card-title {
+  color: black !important;
+  font-size: 100% !important;
+  text-align: right;
+  margin-right: .25rem;
+  margin-top: .25rem !important;
+  margin-bottom: 0rem;
+}
+
+.calendar-day-card .card-body {
+  padding-top: 0rem;
+  padding-left: .25rem;
+  padding-right: .25rem;
+  white-space: wrap;
+  overflow: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis !important;
+  font-size: 75%;
 }
