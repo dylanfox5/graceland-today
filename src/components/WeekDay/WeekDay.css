@@ -6,7 +6,8 @@
   border-color: rgba(0, 31, 91) !important;
   border-radius: 0px !important;
   white-space: wrap;
-  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
   text-overflow: ellipsis !important;
   color: black;
   margin: 1rem;
