@@ -3,14 +3,21 @@ import graceland from '../../img/graceland.png';
 import './TodayBanner.css';
 
 function TodayBanner() {
+  const today = new Date();
+  const date = String(today.getDate()).padStart(2, '0');
+  const day = today.getDay();
+  const month = today.getMonth();
+  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+
   return (
     <Card className="today-card">
       <Card.Header>
         <Card.Text as="h1" className="date-num">
-          26
+          {date}
         </Card.Text>
         <Card.Text as="h4" className="date-day-year">
-          Monday, SEP
+          {daysOfWeek[day] + ", " + months[month]}
         </Card.Text>
       </Card.Header>
       <Card.Body>

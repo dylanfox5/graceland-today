@@ -17,9 +17,9 @@ function App() {
         <Col sm={12} lg={2} className="middle">
           <TodayBanner />
         </Col>
-        <Col sm={12} lg={10} className="">
+        <Col sm={12} lg={10}>
           <Week />
-          <Row className="">
+          <Row>
             <Col>
               <Card className="calendar-card">
 

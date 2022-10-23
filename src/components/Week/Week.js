@@ -9,11 +9,11 @@ function Week() {
   return (
     <Row>
       {days.map((day) => 
-        <Col>
+        <Col className="">
           <Row className="center day">
             <h5>{day}</h5>
           </Row>
-          <Row>
+          <Row className="center">
             <WeekDay />
           </Row>
         </Col>
