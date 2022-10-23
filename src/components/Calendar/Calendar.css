@@ -1,0 +1,14 @@
+.calendar-card {
+  width: 60vw;
+  min-height: 66.5vh;
+  background: linear-gradient(rgba(0, 31, 91), rgb(114, 133, 167));
+  border: 0px;
+  border-radius: 0px;
+}
+
+.calendar-card .card-title {
+  font-size: 5vh;
+  color: white;
+  margin-left: 1rem;
+  margin-top: .5rem;
+}

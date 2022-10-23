@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import TodayBanner from './components/TodayBanner/TodayBanner';
 import Week from './components/Week/Week';
 import CustomAccordion from "./components/CustomAccordion/CustomAccordion";
+import Calendar from "./components/Calendar/Calendar";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -21,9 +22,7 @@ function App() {
           <Week />
           <Row>
             <Col>
-              <Card className="calendar-card">
-
-              </Card>
+              <Calendar />
             </Col>
             <Col>
               <CustomAccordion />

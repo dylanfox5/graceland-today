@@ -1,0 +1,6 @@
+.calendar-day-card {
+  max-width: 7vw;
+  min-height: 9vh;
+  background-color: rgba(225, 225, 225);
+  border-radius: 0px !important;
+}

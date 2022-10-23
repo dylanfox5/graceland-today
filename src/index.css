@@ -32,12 +32,3 @@ body {
   align-items: center;
   text-align: center;
 }
-
-.calendar-card {
-  width: 55.5vw;
-  min-height: 66.5vh;
-  background: linear-gradient(rgba(0, 31, 91), rgb(114, 133, 167));
-  border: 0px;
-  border-radius: 0px;
-}
-
