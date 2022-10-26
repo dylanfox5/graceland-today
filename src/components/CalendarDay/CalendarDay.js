@@ -9,7 +9,7 @@ function CalendarDay(props) {
   return (
     <Card className="calendar-day-card">
       <Card.Title>{date}</Card.Title>
-      <Card.Body>Hello World</Card.Body>
+      <Card.Body></Card.Body>
     </Card>
   );
 }

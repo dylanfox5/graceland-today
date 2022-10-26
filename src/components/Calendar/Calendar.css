@@ -1,6 +1,5 @@
 .calendar-card {
   width: 60vw;
-  min-height: 66.5vh;
   background: linear-gradient(rgba(0, 31, 91), rgb(114, 133, 167));
   border: 0px;
   border-radius: 0px;
@@ -14,8 +13,17 @@
   margin-top: .5rem;
 }
 
+.mobile-display {
+  color: white;
+  display: none;
+}
+
 @media (max-width: 992px) {
   .calendar-card {
     width: 75vw !important;
+  }
+
+  .mobile-display {
+    display: block;
   }
 }

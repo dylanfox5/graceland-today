@@ -29,8 +29,9 @@ function Calendar() {
         {Array.from({ length: 6 }).map((_, index) => (
           <Row className="mb-3">
             {Array.from({ length: 7 }).map((_, idx) => (
-              <Col>
-                <CalendarDay date={idx+(7*index) >= firstDayOfMonth && dayCounter <= currDaysInMonth ? dayCounter++ : ""} />
+              <Col className="middle">
+                <CalendarDay date={idx+(7*index) >= firstDayOfMonth && dayCounter <= currDaysInMonth ? dayCounter : ""} />
+                <h3 className="mobile-display">{idx+(7*index) >= firstDayOfMonth && dayCounter <= currDaysInMonth ? dayCounter++ : ""}</h3>
               </Col>
             ))}
           </Row>

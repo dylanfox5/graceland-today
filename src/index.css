@@ -34,13 +34,4 @@ body {
   body {
     overflow: scroll;
   }
-
-  /* .App {
-    background: linear-gradient(rgba(55, 131, 184, 0.70), rgba(55, 131, 184, 0.70)), url("./img/gu.png"); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
-  } */
 }

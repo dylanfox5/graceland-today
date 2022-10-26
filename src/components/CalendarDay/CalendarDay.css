@@ -1,5 +1,6 @@
 .calendar-day-card {
-  max-width: 7vw;
+  min-width: 100% !important;
+  /* max-width: 10vw !important; */
   min-height: 8vh;
   max-height: 8vh;
   background-color: rgba(225, 225, 225);
@@ -24,4 +25,10 @@
   overflow-x: hidden;
   text-overflow: ellipsis !important;
   font-size: 75%;
+}
+
+@media (max-width: 992px) {
+  .calendar-day-card {
+    display: none !important;
+}
 }
