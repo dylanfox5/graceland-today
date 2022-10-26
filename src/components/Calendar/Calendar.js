@@ -18,19 +18,9 @@ function Calendar() {
     return new Date(year, month+1, 0).getDate();
   };
   const currDaysInMonth = getDaysInMonth(monthNum, year);
-  // console.log(currDaysInMonth);
-
   const firstDayOfMonth = new Date(year, monthNum, 1).getDay();
-  // console.log(firstDayOfMonth);
-
-  var counter = 0;
+  
   var dayCounter = 1;
-
-  const increment = (c) => {
-    return c++;
-  }
-
-  console.log(currDaysInMonth);
 
   return (
     <Card className="calendar-card">
