@@ -34,7 +34,7 @@
   padding: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .today-card .graceland {
     max-width: 75%;
   }
