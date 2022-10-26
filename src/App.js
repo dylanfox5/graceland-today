@@ -20,10 +20,10 @@ function App() {
         <Col sm={12} lg={10}>
           <Week />
           <Row>
-            <Col>
+            <Col className="middle">
               <Calendar />
             </Col>
-            <Col>
+            <Col className="middle">
               <CustomAccordion />
             </Col>
           </Row>

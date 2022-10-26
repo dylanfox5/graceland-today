@@ -28,3 +28,9 @@
 .day-card .card-text {
   font-size: 75%;
 }
+
+@media (max-width: 992px) {
+  .day-card {
+    width: 75vw !important;
+  }
+}
