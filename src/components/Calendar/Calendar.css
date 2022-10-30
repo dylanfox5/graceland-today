@@ -16,6 +16,7 @@
 .mobile-display {
   color: white;
   display: none;
+  margin: auto;
 }
 
 @media (max-width: 992px) {
@@ -25,5 +26,10 @@
 
   .mobile-display {
     display: block;
+  }
+
+  .mobile-display:hover {
+    color: rgb(114, 133, 167);
+    
   }
 }

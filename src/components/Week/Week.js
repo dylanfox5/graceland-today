@@ -14,8 +14,6 @@ function Week() {
     week.push(day);
   }
 
-  console.log(week)
-
   return (
     <Row>
       {days.map((day, index) =>
