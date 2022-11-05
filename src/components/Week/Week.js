@@ -11,6 +11,9 @@ function Week() {
 
   for (let i = 0; i < 7; i++) {
     var day = today.getDate() - today.getDay() + i;
+    if (day < 1) {
+      day = new Date(today.getFullYear(), today.getMonth(), 0).getDate() + day;
+    }
     week.push(day);
   }
 
