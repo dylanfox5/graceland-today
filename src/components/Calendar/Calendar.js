@@ -25,8 +25,6 @@ function Calendar() {
   const currDaysInMonth = getDaysInMonth(monthNum, year);
   const firstDayOfMonth = new Date(year, monthNum, 1).getDay();
   
-  
-
   const cols = 7;
   const rows = Math.round((currDaysInMonth + firstDayOfMonth) / cols);
   var calendarArr = [];
