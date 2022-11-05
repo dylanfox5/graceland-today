@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import CalendarDay from '../CalendarDay/CalendarDay';
 import CustomModal from '../CustomModal/CustomModal';
-import { month, daysInCurrentMonth, firstDayOfMonth } from '../../constants/constants';
+import { monthOfYear, month, daysInCurrentMonth, firstDayOfMonth } from '../../constants/constants';
 
 import { useState } from 'react';
 
@@ -29,7 +29,7 @@ function Calendar() {
   return (
     <Card className="calendar-card">
       <CustomModal onHide={() => setShowModal(false)} show={showModal} />
-      <Card.Title>{month}</Card.Title>
+      <Card.Title>{monthOfYear}</Card.Title>
       <Card.Body>
         {Array.from({ length: rows }).map((_, index) => (
           <Row className="mb-3">

@@ -10,7 +10,6 @@ import Calendar from "./components/Calendar/Calendar";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-
   return (
     <Container fluid className="App">
       <Row className="vh-100">
