@@ -3,36 +3,22 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import CalendarDay from '../CalendarDay/CalendarDay';
 import CustomModal from '../CustomModal/CustomModal';
+import { month, daysInCurrentMonth, firstDayOfMonth } from '../../constants/constants';
 
 import { useState } from 'react';
 
 import './Calendar.css';
 
 function Calendar() {
-  const [showModal, setShowModal] = useState(false);
-
-  const today = new Date();
-
-  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const monthNum = today.getMonth();
-  const month = months[monthNum];
-
-  const year = today.getFullYear();
-
-  const getDaysInMonth = (month, year) => {
-    return new Date(year, month+1, 0).getDate();
-  };
-  const currDaysInMonth = getDaysInMonth(monthNum, year);
-  const firstDayOfMonth = new Date(year, monthNum, 1).getDay();
-  
+  const [showModal, setShowModal] = useState(false);  
   const cols = 7;
-  const rows = Math.round((currDaysInMonth + firstDayOfMonth) / cols);
+  const rows = Math.round((daysInCurrentMonth + firstDayOfMonth) / cols);
   var calendarArr = [];
   var dayCounter = 1;
 
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
-      var d = (j + (cols * i) >= firstDayOfMonth && dayCounter <= currDaysInMonth) ? dayCounter : "";
+      var d = (j + (cols * i) >= firstDayOfMonth && dayCounter <= daysInCurrentMonth) ? dayCounter : "";
       calendarArr.push(d);
       if (d > 0) {
         dayCounter++;

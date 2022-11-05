@@ -3,7 +3,6 @@ import Card from 'react-bootstrap/Card';
 import './CalendarDay.css';
 
 function CalendarDay(props) {
-
   const date = props.date;
 
   return (

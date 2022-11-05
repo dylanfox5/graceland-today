@@ -2,13 +2,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import WeekDay from '../WeekDay/WeekDay';
 import './Week.css';
+import { daysOfWeek, today } from '../../constants/constants';
 
 function Week() {
-  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-  var today = new Date();
   var week = [];
-
   for (let i = 0; i < 7; i++) {
     var day = today.getDate() - today.getDay() + i;
     if (day < 1) {
@@ -19,7 +16,7 @@ function Week() {
 
   return (
     <Row>
-      {days.map((day, index) =>
+      {daysOfWeek.map((day, index) =>
         <Col>
           <Row className="center day">
             <h5>

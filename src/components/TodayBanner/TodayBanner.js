@@ -1,23 +1,17 @@
 import Card from 'react-bootstrap/Card';
 import graceland from '../../img/graceland.png';
 import './TodayBanner.css';
+import { dayOfMonth, day, month, daysOfWeek, monthsAbbr } from '../../constants/constants';
 
 function TodayBanner() {
-  const today = new Date();
-  const date = String(today.getDate()).padStart(2, '0');
-  const day = today.getDay();
-  const month = today.getMonth();
-  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-
   return (
     <Card className="today-card">
       <Card.Header>
         <Card.Text as="h1" className="date-num">
-          {date}
+          {dayOfMonth}
         </Card.Text>
         <Card.Text as="h4" className="date-day-year">
-          {daysOfWeek[day] + ", " + months[month]}
+          {daysOfWeek[day] + ", " + monthsAbbr[month]}
         </Card.Text>
       </Card.Header>
       <Card.Body>
