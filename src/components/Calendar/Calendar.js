@@ -25,19 +25,34 @@ function Calendar() {
   const currDaysInMonth = getDaysInMonth(monthNum, year);
   const firstDayOfMonth = new Date(year, monthNum, 1).getDay();
   
+  
+
+  const cols = 7;
+  const rows = Math.round((currDaysInMonth + firstDayOfMonth) / cols);
+  var calendarArr = [];
   var dayCounter = 1;
+
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < cols; j++) {
+      var d = (j + (cols * i) >= firstDayOfMonth && dayCounter <= currDaysInMonth) ? dayCounter : "";
+      calendarArr.push(d);
+      if (d > 0) {
+        dayCounter++;
+      }
+    }
+  }
 
   return (
     <Card className="calendar-card">
       <CustomModal onHide={() => setShowModal(false)} show={showModal} />
       <Card.Title>{month}</Card.Title>
       <Card.Body>
-        {Array.from({ length: 6 }).map((_, index) => (
+        {Array.from({ length: rows }).map((_, index) => (
           <Row className="mb-3">
-            {Array.from({ length: 7 }).map((_, idx) => (
+            {Array.from({ length: cols }).map((_, idx) => (
               <Col className="middle px-1">
-                <CalendarDay date={idx+(7*index) >= firstDayOfMonth && dayCounter <= currDaysInMonth ? dayCounter : ""} />
-                <h5 onClick={() => setShowModal(true)} className="mobile-display">{idx+(7*index) >= firstDayOfMonth && dayCounter <= currDaysInMonth ? dayCounter++ : ""}</h5>
+                <CalendarDay date={calendarArr[idx + (cols * index)]} />
+                <h5 onClick={() => setShowModal(true)} className="mobile-display">{calendarArr[idx + (cols * index)]}</h5>
               </Col>
             ))}
           </Row>
