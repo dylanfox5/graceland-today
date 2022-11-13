@@ -1,0 +1,36 @@
+.day-card {
+  width: 9vw !important;
+  height: 15.75vh !important;
+  background-color: rgba(200, 219, 234) !important;
+  border-width: 3px !important;
+  border-color: rgba(0, 31, 91) !important;
+  border-radius: 0px !important;
+  white-space: wrap;
+  overflow: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis !important;
+  color: black;
+  margin-bottom: 1rem;
+  padding: 0rem !important;
+  text-align: left;
+  box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.day-card .card-title {
+  text-align: right;
+  color: black !important;
+  font-size: 100% !important;
+  margin-top: -.75rem !important;
+  margin-bottom: 0rem;
+  margin-right: -.5rem;
+}
+
+.day-card .card-text {
+  font-size: 75%;
+}
+
+@media (max-width: 992px) {
+  .day-card {
+    width: 75vw !important;
+  }
+}
