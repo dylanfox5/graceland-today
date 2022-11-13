@@ -7,6 +7,8 @@ import Week from './components/Week/Week';
 import CustomAccordion from "./components/CustomAccordion/CustomAccordion";
 import Calendar from "./components/Calendar/Calendar";
 
+import "./firebaseConfig";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -17,7 +19,11 @@ function App() {
           <TodayBanner />
         </Col>
         <Col sm={12} lg={10}>
-          <Week />
+          <Row>
+            <Col>
+              <Week />
+            </Col>
+          </Row>
           <Row>
             <Col className="middle">
               <Calendar />
