@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# Graceland Today
+Graceland Today serves as a calendar dashboard for the current events at Graceland University. It was built by
+Dylan Fox and designed by Chase Wood. This application uses the ReactJS Framework, Bootstrap, and is hosted using Google's Firebase.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+You can view this project in-action at [Graceland Today](https://graceland-today.web.app/)
+
+## Development
+To run this project locally, please follow these steps:
+- Clone the project
+- Run the command `npm install` to install the node modules
+- Run the command `npm start` to launch the app
+- Navigate to [http://localhost:3000](http://localhost:3000)
+
+For more help, see the scripts below.
 
 ## Available Scripts
 
