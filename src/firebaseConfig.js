@@ -24,11 +24,4 @@ function setOrgAnnouncements(orgs) {
   }
   return payload;
 }
-
 export const announcements = setOrgAnnouncements(orgs);
-// export const { "Academic Student Council": asc,
-//   "COSA": cosa,
-//   "Council of House Chaplains": chc,
-//   "IDEA": idea,
-//   "Intramurals": ims,
-//   "Senate": sen } = { ...announcements };
