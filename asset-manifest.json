@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.dffdc63e.css",
-    "main.js": "/static/js/main.4511fad5.js",
-    "static/media/gu.png": "/static/media/gu.c4eb450d196669478b48.png",
-    "static/media/graceland.png": "/static/media/graceland.9b5fa364b1277e5afe17.png",
-    "index.html": "/index.html",
-    "main.dffdc63e.css.map": "/static/css/main.dffdc63e.css.map",
-    "main.4511fad5.js.map": "/static/js/main.4511fad5.js.map"
+    "main.css": "/graceland-today/static/css/main.8a01d0f9.css",
+    "main.js": "/graceland-today/static/js/main.e3422613.js",
+    "static/media/gu.png": "/graceland-today/static/media/gu.c4eb450d196669478b48.png",
+    "static/media/graceland.png": "/graceland-today/static/media/graceland.9b5fa364b1277e5afe17.png",
+    "index.html": "/graceland-today/index.html",
+    "main.8a01d0f9.css.map": "/graceland-today/static/css/main.8a01d0f9.css.map",
+    "main.e3422613.js.map": "/graceland-today/static/js/main.e3422613.js.map"
   },
   "entrypoints": [
-    "static/css/main.dffdc63e.css",
-    "static/js/main.4511fad5.js"
+    "static/css/main.8a01d0f9.css",
+    "static/js/main.e3422613.js"
   ]
 }
